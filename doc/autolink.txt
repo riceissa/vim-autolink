@@ -11,6 +11,8 @@ This is useful when writing because one does not have to manually copy e.g.
 the title of an article.  Some social networking sites provide a similar
 feature.
 
+This plugin uses the contents of the |quoteplus| register as the URL.
+
 This plugin uses two variables, g:autolink_download_provider and
 g:autolink_executable.  The former must be an executable that accepts a URL at
 the end and sends the web page contents to standard output.  By default the
