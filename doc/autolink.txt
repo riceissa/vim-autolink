@@ -1,0 +1,33 @@
+*autolink.vim* An interface to autolink
+
+License: Same terms as Vim itself (see |license|)
+
+INTRODUCTION                                    *autolink*
+
+This plugin provides an interface to autolink.
+
+Autolink is a program that can automatically fetch metadata of web pages.
+This is useful when writing because one does not have to manually copy e.g.
+the title of an article.  Some social networking sites provide a similar
+feature.
+
+This plugin uses two variables, g:autolink_download_provider and
+g:autolink_executable.  The former must be an executable that accepts a URL at
+the end and sends the web page contents to standard output.  By default the
+plugin uses wget with the value
+>
+    let g:autolink_download_provider = 'wget --quiet -O -'
+<
+
+Another choice would be to use cURL with e.g.
+>
+    let g:autolink_download_provider = 'curl --silent --compressed'
+<
+
+The latter configuration variable, g:autolink_executable, is the location of
+the autolink program.  By default the plugin uses the value
+>
+    let g:autolink_executable = 'autolink'
+<
+
+ vim:tw=78:et:ft=help:norl:
