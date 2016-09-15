@@ -32,4 +32,4 @@ the autolink program.  By default the plugin uses the value
     let g:autolink_executable = 'autolink'
 <
 
- vim:tw=78:et:ft=help:norl:
+ vim:tw=78:et:ts=8:ft=help:norl:
